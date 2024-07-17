@@ -39,7 +39,6 @@
 		D10333CE2C3597AC002537C5 = {
 			isa = PBXGroup;
 			children = (
-				D10333E82C35982C002537C5 /* RootView.swift */,
 				D10333D92C3597AC002537C5 /* AppSumOfTwoNumbers */,
 				D10333D82C3597AC002537C5 /* Products */,
 			);
@@ -56,6 +55,7 @@
 		D10333D92C3597AC002537C5 /* AppSumOfTwoNumbers */ = {
 			isa = PBXGroup;
 			children = (
+				D10333E82C35982C002537C5 /* RootView.swift */,
 				D10333DA2C3597AC002537C5 /* AppSumOfTwoNumbersApp.swift */,
 				D10333DC2C3597AC002537C5 /* MainView.swift */,
 				D10333EA2C359857002537C5 /* SplashScreenView.swift */,
@@ -296,6 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vdnkd.AppSumOfTwoNumbers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,6 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vdnkd.AppSumOfTwoNumbers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

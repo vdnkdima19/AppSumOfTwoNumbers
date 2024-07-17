@@ -81,11 +81,18 @@ struct MainView: View {
     @ViewBuilder
     private func setTextField(text: Binding<String>) -> some View {
         TextField("", text: text)
+            .keyboardType(.numberPad)
             .multilineTextAlignment(.leading)
             .background(Color.white)
             .padding(10)
             .frame(width: 260)
             .font(.system(size: 24))
+            .onChange(of: text.wrappedValue) { newValue in
+            let filtered = newValue.filter { "-0123456789.".contains($0) }
+            if filtered != newValue {
+                text.wrappedValue = filtered
+            }
+        }
     }
 }
 
