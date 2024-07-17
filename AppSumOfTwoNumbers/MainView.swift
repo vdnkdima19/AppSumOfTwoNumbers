@@ -87,12 +87,6 @@ struct MainView: View {
             .padding(10)
             .frame(width: 260)
             .font(.system(size: 24))
-            .onChange(of: text.wrappedValue) { newValue in
-            let filtered = newValue.filter { "-0123456789.".contains($0) }
-            if filtered != newValue {
-                text.wrappedValue = filtered
-            }
-        }
     }
 }
 
